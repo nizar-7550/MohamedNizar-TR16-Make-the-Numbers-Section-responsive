@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.star-box {
+  margin-top: 25%;
+  font-size: 20px;
+  color: #043a53;
+}
+.star-box p {
+  margin: 10px;
+}
+@media (max-width: 767px) {
+  .star-box {
+    grid-template-columns: repeat(grid-auto-flow, row dense(120px, 1fr));
+  }
+  .main {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
